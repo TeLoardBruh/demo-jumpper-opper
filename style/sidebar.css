@@ -1,0 +1,62 @@
+.side-bar-logo-area {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 136px;
+  background-color: #f7f7f7;
+}
+
+#toggleSideBar {
+  background-color: red;
+}
+
+.side-bar-banner {
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+
+.side-bar-background {
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg);
+  background-color: #212529;
+  position: absolute;
+  top: -65px;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  left: 0;
+  right: 0;
+}
+
+.side-bar-logo {
+  height: auto;
+  width: 200px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+  align-items: center;
+  align-content: center;
+  padding: 14px 30px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+}

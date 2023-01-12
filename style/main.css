@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --demo-width: 100%;
+  --demo-height: 250px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-bar {
+  background-color: #212529;
+  padding: 15px;
+}
+
+.hero-section {
+  background-color: aqua;
+  width: var(--demo-width);
+  height: var(--demo-height);
+}
+
+.location-section {
+  background-color: aquamarine;
+  width: var(--demo-width);
+  height: var(--demo-height);
+}
+
+.main-section {
+  /* background-color: azure; */
+  width: var(--demo-width);
+  height: var(--demo-height);
+
+  /* adding extra layout to child set from parents */
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.main-section .menu-section {
+  /* background-color: beige; */
+  width: var(--demo-width);
+  height: var(--demo-height);
+}
+
+.main-section .product-section {
+  background-color: blueviolet;
+  width: var(--demo-width);
+  height: var(--demo-height);
+}
+
+#main {
+  transition: margin-left 0.5s;
+  background-color: red;
+}

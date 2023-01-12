@@ -1,0 +1,30 @@
+.nav-bar-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-bar-item {
+  cursor: pointer;
+}
+
+.nav-bar-item .nav-bar-img-logo {
+  width: 75px;
+  height: 75px;
+}
+
+.nav-bar-item:nth-child(2) {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-30%, 10%);
+}
+
+.nav-bar-item:last-of-type {
+  text-align: end;
+}
