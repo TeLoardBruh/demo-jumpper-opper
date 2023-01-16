@@ -11,10 +11,6 @@
   background-color: #f7f7f7;
 }
 
-#toggleSideBar {
-  background-color: red;
-}
-
 .side-bar-banner {
   width: 100%;
   height: 110px;
@@ -59,4 +55,16 @@
 
 #main {
   transition: margin-left 0.5s;
+}
+
+.side-bar-logo-area .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu-list .menu-item:hover {
+  color: #6a6a6a;
 }

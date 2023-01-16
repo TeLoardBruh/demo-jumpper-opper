@@ -12,6 +12,7 @@ ul {
 
 .nav-bar-item {
   cursor: pointer;
+  color: rgb(7, 6, 30);
 }
 
 .nav-bar-item .nav-bar-img-logo {
