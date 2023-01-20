@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/nav-bar.css" />
+    <link rel="stylesheet" href="./style/sidebar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/carousel.css" />
+
+    <title>Demo Jummper Hopper</title>
+  </head>
+  <body>
+    <div id="mySidebar" class="side-bar-logo-area toggleSideBar">
+      <div
+        class="closebtn"
+        style="font-weight: bolder; z-index: 5; cursor: pointer"
+        onclick="closeNav()"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-square-x"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <rect x="4" y="4" width="16" height="16" rx="2" />
+          <path d="M10 10l4 4m0 -4l-4 4" />
+        </svg>
+      </div>
+
+      <div class="side-bar-banner">
+        <div class="side-bar-background"></div>
+        <img class="side-bar-logo" src="./media/text_logo.svg" alt="" />
+      </div>
+      <ul class="menu-list">
+        <li class="menu-item" style="cursor: pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-home"
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <polyline points="5 12 3 12 12 3 21 12 19 12" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+          </svg>
+          <p>Home</p>
+        </li>
+        <li class="menu-item" style="cursor: pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-login"
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
+            />
+            <path d="M20 12h-13l3 -3m0 6l-3 -3" />
+          </svg>
+          <p>Login / Sign Up</p>
+        </li>
+        <li class="menu-item" style="cursor: pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-info-circle"
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <line x1="12" y1="8" x2="12.01" y2="8" />
+            <polyline points="11 12 12 12 12 16 13 16" />
+          </svg>
+          <p>About Us</p>
+        </li>
+        <li class="menu-item" style="cursor: pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-mail"
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>
+          <p>Contact Us</p>
+        </li>
+        <li class="menu-item" style="cursor: pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-message-circle-2"
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+            <line x1="12" y1="12" x2="12" y2="12.01" />
+            <line x1="8" y1="12" x2="8" y2="12.01" />
+            <line x1="16" y1="12" x2="16" y2="12.01" />
+          </svg>
+          <p>FAQ</p>
+        </li>
+        <li class="menu-item" style="cursor: pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-settings"
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
+            />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+          <p>Settings</p>
+        </li>
+      </ul>
+    </div>
+
+    <main id="main">
+      <nav class="nav-bar">
+        <ul class="nav-bar-group">
+          <li
+            class="nav-bar-item"
+            style="font-weight: bolder"
+            onclick="openNav()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-2"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="2.4"
+              stroke="#07061e"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </li>
+          <li class="nav-bar-item">
+            <img
+              class="nav-bar-img-logo"
+              src="./media/logo.png"
+              alt="demo-img"
+            />
+          </li>
+          <li class="nav-bar-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-shopping-cart"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="2.4"
+              stroke="#07061e"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="6" cy="19" r="2" />
+              <circle cx="17" cy="19" r="2" />
+              <path d="M17 17h-11v-14h-2" />
+              <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hero-section">
+        <section>
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item active"
+                style="height: 70vh"
+                data-bs-interval="2000"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099&q=80"
+                  class="d-block w-100"
+                  alt="Demo image #1"
+                  style="height: 100%"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First title</h5>
+                  <p class="p-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum quia magnam ratione cum unde atque explicabo
+                    excepturi quis dolorem omnis minima neque possimus maiores,
+                    illum vero. Ut iure sed sunt?
+                  </p>
+                </div>
+              </div>
+              <div
+                class="carousel-item"
+                style="height: 70vh"
+                data-bs-interval="2000"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  class="d-block w-100"
+                  style="height: 100%"
+                  alt="Demo image #2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second title</h5>
+                  <p class="p-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum quia magnam ratione cum unde atque explicabo
+                    excepturi quis dolorem omnis minima neque possimus maiores,
+                    illum vero. Ut iure sed sunt?
+                  </p>
+                </div>
+              </div>
+              <div
+                class="carousel-item"
+                style="height: 70vh"
+                data-bs-interval="2000"
+              >
+                <img
+                  src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  class="d-block w-100"
+                  style="height: 100%"
+                  alt="Demo image #3"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third title</h5>
+                  <p class="p-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum quia magnam ratione cum unde atque explicabo
+                    excepturi quis dolorem omnis minima neque possimus maiores,
+                    illum vero. Ut iure sed sunt?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="location-section"></div>
+
+      <div class="main-section">
+        <section class="menu-section"></section>
+        <section class="product-section"></section>
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

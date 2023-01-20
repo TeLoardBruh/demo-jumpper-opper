@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Hero Section</title>
+  </head>
+  <body>
+    <div>
+      <section class="mb-40">
+        <nav
+          class="navbar navbar-expand-lg shadow-md py-2 bg-white relative flex items-center w-full justify-between"
+        >
+          <div class="px-6 w-full flex flex-wrap items-center justify-between">
+            <div class="flex items-center">
+              <button
+                class="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent text-gray-600 hover:text-gray-700 focus:text-gray-700 transition-shadow duration-150 ease-in-out mr-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContentY"
+                aria-controls="navbarSupportedContentY"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  class="w-5"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  ></path>
+                </svg>
+              </button>
+              <a class="navbar-brand text-blue-600" href="#!">
+                <object
+                  type="image/svg+xml"
+                  data="../media/logo_v2.svg"
+                ></object>
+              </a>
+            </div>
+            <div
+              class="navbar-collapse collapse grow items-center"
+              id="navbarSupportedContentY"
+            >
+              <ul class="navbar-nav mr-auto lg:flex lg:flex-row">
+                <li class="nav-item">
+                  <a
+                    class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+                    href="#!"
+                    data-mdb-ripple="true"
+                    data-mdb-ripple-color="light"
+                    >Dashboard</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+                    href="#!"
+                    data-mdb-ripple="true"
+                    data-mdb-ripple-color="light"
+                    >Team</a
+                  >
+                </li>
+                <li class="nav-item mb-2 lg:mb-0">
+                  <a
+                    class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+                    href="#!"
+                    data-mdb-ripple="true"
+                    data-mdb-ripple-color="light"
+                    >Projects</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center lg:ml-auto">
+              <button
+                type="button"
+                class="inline-block px-6 py-2.5 mr-2 bg-transparent text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+                style="color: #599d8b"
+              >
+                Login
+              </button>
+              <button
+                type="button"
+                class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+                style="background-color: #599d8b"
+              >
+                Sign up for free
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="px-6 py-12 md:px-12 text-gray-800 text-center lg:text-left">
+          <div class="container mx-auto xl:px-32">
+            <div class="grid lg:grid-cols-2 flex items-center">
+              <div class="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
+                <div
+                  class="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
+                  style="
+                    background: hsla(0, 0%, 100%, 0.55);
+                    backdrop-filter: blur(30px);
+                  "
+                >
+                  <h1
+                    class="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight mb-12"
+                  >
+                    The best offer <br /><span
+                      class="text-blue-600"
+                      style="color: #564d44"
+                      >for your business</span
+                    >
+                  </h1>
+                  <a
+                    class="inline-block px-7 py-3 mb-2 md:mb-0 md:mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    data-mdb-ripple="true"
+                    data-mdb-ripple-color="light"
+                    href="#!"
+                    role="button"
+                    style="background-color: #564d44"
+                    >Get started</a
+                  >
+                  <a
+                    class="inline-block px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out"
+                    data-mdb-ripple="true"
+                    data-mdb-ripple-color="light"
+                    href="#!"
+                    role="button"
+                    style="color: #599d8b"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+              <div class="md:mb-12 lg:mb-0">
+                <img
+                  src="https://images.pexels.com/photos/14683691/pexels-photo-14683691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  class="w-full rounded-lg shadow-lg"
+                  alt=""
+                  style="height: 450px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Design Block -->
+    </div>
+    <!-- Container for demo purpose -->
+  </body>
+</html>
